@@ -1,0 +1,12 @@
+$(function() {
+	let checked;
+	$('input').each(function() {
+		if ($(this).is(':checked')) {
+			let attr_id = $(this).attr("data-id");
+			checked.push($(this).attr(attr_id));
+		} else {
+			checked.splice(checked.indexOf($(this).attr("data-id"), 1));
+		}
+	});
+	console.log(checked)
+})
