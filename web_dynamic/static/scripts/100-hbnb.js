@@ -108,7 +108,7 @@ $(function() {
 		//let a_id = Object.values(checked);
 		query['amenities'] = a_id;
 		query['states'] = s_id;
-		query['city'] = c_id;
+		query['cities'] = c_id;
 
 		$.ajax({
 			url: 'http://0.0.0.0:5001/api/v1/places_search/',
